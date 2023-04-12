@@ -1,2 +1,0 @@
-# tareaIA
-Tarea IA
