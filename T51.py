@@ -5,10 +5,6 @@ from dataclasses import dataclass
 ==========		Búsqueda en profundidad		=====
 ======================================================
 
-
-======================================================
-	========		clase nodos		========
-======================================================
 //https://www.w3schools.com/python/python_classes.asp
 
 
