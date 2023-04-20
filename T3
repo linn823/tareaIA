@@ -1,4 +1,5 @@
 ¿Es el algoritmo de Hill Climbing apropiado para el problema de misioneros y
 caníbales? Justifique.
 Respuesta: NO
-Justificación:el profesor lo habia mensionado en la clase,uno de los algoritmo recomendado es Busqueda de Anchura.
+Justificación:el profesor lo habia mensionado en la clase,uno de los algoritmo recomendado es Busqueda de Anchura.La razón cual no fue apropiado es que algoritmo de Hill Climbing puede que no llega a una solucion optima debido su implementación, en otra palabras que no va buscar por todo el grafo, solomente en el momento de tomar de deciciones de ruta,al momento de elegir el camino ,va a elejir una ruta "mejor" o "facil" . Es decir, que este algoritmo comienza en una solución cualquiera y va el espacio de soluciones "vecinos" en busca de una solución óptima. En cambio ,es mas conveniente para usar tipo pregunta como en la selección de hiperparámetros en redes neuronales como había mencionado en la clase.
+
