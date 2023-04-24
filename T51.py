@@ -1,21 +1,22 @@
 from dataclasses import dataclass
-//implementacion 5.1
+#comentario
+def BúsquedaProfundidad (escogiendo un sucesor al azar):
+	
+#comentario
+def BúsquedaCostoUniforme:
+	
+#comentario
+def BúsquedaGreedy:
+	
+#comentario
+def A*:
 
-======================================================
-==========		Búsqueda en profundidad		=====
-======================================================
-
-//https://www.w3schools.com/python/python_classes.asp
-
-
+#nodo
 clase node:
 	name:str
 	cost:int
 	state:bool
-	%%%%%%%%%%%%%%%%%%%%%%%%%
 	nextNod:
-	NextRouteCost:
-	%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	def __init__(self,name,cost,nextNod)
 		self.name = name
@@ -26,14 +27,7 @@ clase node:
 	//nextNod puede contener varios puntero nodos
 	//NextRouteCost puede contener varios costos asociado.
 
-
-======================================================
-	========	clase costos de la ruta		========
-======================================================
-//https://stackoverflow.com/questions/53131002/creating-a-list-of-pairs-python
-//tipo datos: https://docs.python.org/es/3/tutorial/datastructures.html
-//9.7 Cambalache:https://docs.python.org/es/3/tutorial/classes.html#odds-and-ends
-
+	
 clase routeCost:
 	origen: str
 	destination: str
@@ -44,9 +38,3 @@ clase routeCost:
 		self.origin = origin
 		self.destination = destination
 		self.cost = cost
-
-
-
-
-
-

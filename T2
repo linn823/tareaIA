@@ -2,7 +2,15 @@
 inicial, test objetivo y acciones)
 
 Test objetivo :  crear una torre con los bloques A, B y C, donde A es el bloque
-de más arriba y C el de más abajo (sobre la mesa).
+de más arriba y C el de más abajo (sobre la mesa),(ya que existe 6 combinaciones)
+(en forma de izquierda hacia derecha ,de arriba hacia bajo como ejemplo de bajo)
+
+CBAXXXDXX
+CBADXXXXX
+DXXCBAXXX
+XXXCBADXX
+XXXDXXCBA
+DXXXXXCBA
 
 acciones: 
 AB:= mover bloque A sobre a bloque B.
@@ -28,73 +36,12 @@ DM:= mover bloque D sobre la mesa.
 Estados:
 Estado inicial: E0:= Al comienzo, los bloques A, B y D están sobre la mesa, y el bloque C está
 sobre el bloque D(suponiendo A,B y D estan en orden de izquierda a derecha sucesivamente.)
+(diseñe un programa que se genera automaticamente los estados que se llama "GeneradorDeEstados.py")
+(talque programa entra con una cadena que se guarda en forma de izquierda hacia derecha ,de arriba hacia bajo ,como siguiente diagrama indicada:)
+ ejemplo #estadoEntrado="ACXXXXDBX"
 
-E1:= con un epacio vacio en la primera posición,luegeo los bloques B y D están sobre la mesa sucesivamente,y el bloque A está sobre el bloque B, el bloque C está sobre el bloque D.
-
-
-E2:= con un epacio vacio en la primera posición,luegeo los bloques B y D están sobre la mesa sucesivamente,y el bloque A está sobre el bloque C, el bloque C está sobre el bloque D.
-
-E3:= los bloques A y D están sobre la mesa sucesivamente,con un espacio vacio entre los 2 bloques,y el bloque B está sobre el bloque A, el bloque C está sobre el bloque D.
-
-E4:= los bloques A y D están sobre la mesa sucesivamente,con un espacio vacio entre los 2 bloques,y el bloque B está sobre el bloque C, el bloque C está sobre el bloque D.
-
-E5:= los bloques A, B y D están sobre la mesa sucesivamente,el bloque C está sobre el bloque B.
-
-E6:= los bloques A, B y D están sobre la mesa sucesivamente,el bloque C está sobre el bloque A.
-
-E7:= los bloques C, B y D están sobre la mesa sucesivamente,el bloque A está sobre el bloque B.
-
-E8:= con un epacio vacio en la primera posición,luegeo los bloques B y D están sobre la mesa sucesivamente,el bloque C está sobre el bloque A,el bloque A está sobre el bloque B.
-
-E9:= con 2 epacios vacios en las primeras posiciones,luegeo lo bloque D están sobre la mesa, el bloque C está sobre el bloque D,el bloque A está sobre el bloque C,el bloque B está sobre el bloque A.
-
-E10:= los bloques B y D están sobre la mesa sucesivamente,con un espacio vacio entre los 2 bloques.el bloque C está sobre el bloque D,el bloque A está sobre el bloque C.
-
-E11:= con un epacio vacio en la primera posición,luegeo los bloques A y D están sobre la mesa sucesivamente,el bloque C está sobre el bloque D,el bloque B está sobre el bloque C.
-
-E12:= con 2 epacios vacios en las primeras posiciones,luegeo lo bloque D están sobre la mesa, el bloque C está sobre el bloque D,el bloque B está sobre el bloque C,el bloque A está sobre el bloque B.
-
-E13:= los bloques A, C y D están sobre la mesa sucesivamente,el bloque B está sobre el bloque A.
-
-E14:= con un epacio vacio en la primera posición,luegeo los bloques B y D están sobre la mesa sucesivamente,el bloque C está sobre el bloque B,el bloque A está sobre el bloque D.
-
-E15:= con un epacio vacio en la primera posición,luegeo los bloques B y D están sobre la mesa sucesivamente,el bloque C está sobre el bloque B,el bloque A está sobre el bloque C.
-
-E16:= los bloques A y B están sobre la mesa sucesivamente con un epacio vacio en la final de posición,el bloque D está sobre el bloque A,el bloque C está sobre el bloque B.
-
-E17:= los bloques A y B están sobre la mesa sucesivamente con un epacio vacio en la final de posición,el bloque D está sobre el bloque C,el bloque C está sobre el bloque B.
-
-E18:= los bloques C, B y D están sobre la mesa,el bloque A está sobre el bloque C.
-
-E19:= los bloques C, B y D están sobre la mesa,el bloque A está sobre el bloque D.
-
-E20:=  los bloques C y B están sobre la mesa sucesivamente con un epacio vacio en la final de posición,el bloque D está sobre el bloque C,el bloque A está sobre el bloque B.
-
-E21:=  los bloques C y B están sobre la mesa sucesivamente con un epacio vacio en la final de posición,el bloque D está sobre el bloque A, el bloque A está sobre el bloque B.
-
-E22:= los bloques D y B están sobre la mesa sucesivamente con un epacio vacio en la final de posición,el bloque C está sobre el bloque A, el bloque A está sobre el bloque B.
-
-E23:= el bloque B está sobre la mesa con 2 epacios vacio en la primera posición y la final de posición.el bloque D está sobre el bloque C,el bloque C está sobre el bloque A, el bloque A está sobre el bloque B.
-
-E24:= los bloques B y D están sobre la mesa sucesivamente, con un espacio vacio entre los 2 bloques.el bloque A está sobre el bloque B,el bloque C está sobre el bloque D.
-
-E25:= los bloques B, A y D están sobre la mesa sucesivamente,el bloque C está sobre el bloque D.
-
-E26:= los bloques A y D están sobre la mesa sucesivamente con un epacio vacio en la final de posición,el bloque B está sobre el bloque A,el bloque C está sobre el bloque D.
-
-E27:= los bloques A, C y D están sobre la mesa sucesivamente,el bloque B está sobre el bloque C.
-
-E28:= los bloques A, C y D están sobre la mesa sucesivamente,el bloque B está sobre el bloque D.
-
-E29:= los bloques A y C están sobre la mesa sucesivamente con un epacio vacio en la final de posición,el bloque B está sobre el bloque A,el bloque D está sobre el bloque C.
-
-E30:=los bloques A y C están sobre la mesa sucesivamente,con un epacio vacio en la final de posición.el bloque D está sobre el bloque B,el bloque B está sobre el bloque A.
-
-E31:= los bloques A, B y C están sobre la mesa sucesivamente,el bloque D está sobre el bloque A.
-
-E32:= los bloques A y B están sobre la mesa sucesivamente, con un espacio vacio entre los 2 bloques.el bloque C está sobre el bloque D, el bloque D está sobre el bloque A.
-
-E33:= el bloque B está sobre la mesa con 2 epacios vacio en la primera posición y la final de posición.el bloque A está sobre el bloque D,el bloque D está sobre el bloque C, el bloque C está sobre el bloque B.
-
-E34:= con un epacio vacio en la primera posición,luegeo los bloques B y A están sobre la mesa sucesivamente.el bloque D está sobre el bloque C,el bloque C está sobre el bloque B.
-
+	X	!	X	!	X !
+	C	!	X	!	B !
+	A	v	X	v	D V
+   <--------------------
+		# ejemplo # 
