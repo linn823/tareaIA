@@ -45,3 +45,13 @@ sobre el bloque D(suponiendo A,B y D estan en orden de izquierda a derecha suces
 	A	v	X	v	D V
    <--------------------
 		# ejemplo # 
+
+2.2 Proponga una heurística no trivial (no h(n)=constante). ¿Es la heurística
+propuesta admisible?
+
+Definición:Una heurística será admisible para cierto problema de búsqueda ,cuando el coste estimado sea siempre menor o igual que el coste mínimo de alcanzar el estado objetivo. 
+
+DEfinición:una heurística no trivial es aquella que utiliza información adicional y más sofisticada para proporcionar una estimación más precisa del costo o la distancia hasta el objetivo.
+
+ Respuesta:sí.Es admisible cuando el coste estimado sea siempre menor o igual que el coste mínimo de alcanzar el estado objetivo. en este caso siempre por vamos a tenr costo 1 en mover como pidio ejercicio.
+ Uno ejemplo seria C esta sobre la mesa ,D esta sobre C ,B sobre D,A sobre B. 

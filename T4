@@ -1,0 +1,22 @@
+4.Para justificar cada una de estas si es admisible,primero tenemos que entender que es
+una heurística admisible: 
+
+	Definición:Una heurística será admisible para cierto problema de búsqueda ,cuando el coste estimado sea siempre menor o igual que el coste mínimo de alcanzar el estado objetivo. 
+
+Justificacion:
+°h3(n) = max (h1(n), h2(n)) :Sí
+	Como puedemos ver aca valor de h3(n) es elegir un valor maximo entre h1(n) y h2(n),otro condición que dio ejercicio es dos heurísticas admisibles, h1 y h2.Volviendo a definicion sabemos una heurística es nunca sobreestima el costo para alcanzar el objetivo real,por analisis,sabamos que h1(n) y h2(n) ambos son heurísiticas admisible, por lo que si h3(n) su salida resultada es de h1(n) o bien h2(n) será admisible,simpre cuando este valor sea menor o igual que el coste mínimo de alcanzar a costo real como hemos mencionado anteriormente
+
+°h4(n) = max (h1(n), 1.1*h2(n)) :Puede que sí.Depende.
+	Aquí valor de h4(n) es elegir un valor maximo entre h1(n) y multiple 1.1 de h2(n).otro condición que dio ejercicio es dos heurísticas admisibles, h1 y h2.
+	Volviendo a definicion sabemos una heurística es nunca sobreestima el costo para alcanzar el objetivo real,por analisis,sabamos que h1(n) y h2 ambos son heurísiticas admisible, por lo que si h4(n) su salida resultada es de h1(n) o bien h2(n) será admisible.Pero como h2 esta multiplicado por 1.1,por lo que aunque h2(n) es heuristica admisible, puede que h4(4) no sea admisible en senido de que puede sobreestima el costo para alcanzar el objetivo real cuando 1.1*h2(n) es el costo maximo,tal que h2(n)es igual a su estimación de costo minimo,en los peores caso. 
+
+°h5(n) = min(h1(n), 3*h2(n)) :Puede que sí.Depende.
+	Aquí valor de h5(n) es elegir un valor minimo entre h1(n) y multiple 3 de h2(n).otro condición que dio ejercicio es dos heurísticas admisibles, h1 y h2.Volviendo a definicion sabemos una heurística es nunca sobreestima el costo para alcanzar el objetivo real,por analisis,sabamos que h1(n) y h2 ambos son heurísiticas admisible, por lo que si h5(n) es elegir un valor minimo ,siempre cuando este valor nunca sobreestima el costo para alcanzar el costo real, es decir ,si valor h2(n) es igual a su costo estimada ,en caso de sale el resultado de 3*h2(n),sobrepasa el costo para objetivo real no será admisible.En caso de sale h1(n) sera admisible por análogo anterior que hemos mecionado .
+
+
+°h6(n) = (h1(n) + h2(n))/2 : sí
+	Aquí valor de h6(n) es un valor promedio de h1(n) + h2(n).otro condición que dio ejercicio es dos heurísticas admisibles, h1 y h2. Supongamos valor de h1(n) es "a",y valor de h2(n) es "b",sabemos que "a" y "b" es su estimación de costo minimo en cada una, y la suma de dos es "a+b" significa para valor de h6(n) tiene que ser menor o igual que la suma de h1(n) + h2(n).Como ejercicio pide la mitad de ambos sumas es decir "(a+b)/2", por lo que es admisible pq es menor que "a+b" de cual viene de la suma de h1(n) + h2(n),simpre cuando este sea menor o igual que el coste mínimo de alcanzar a costo real. 
+
+ ¿Usaría ud. alguna de estas nuevas heurísticas en lugar de h1 o h2?
+Dependiendo problemas especifica,h6(n) usaré para estimar costo real si es que existe dos forma para un problema especifico.

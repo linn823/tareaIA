@@ -2,6 +2,7 @@ from dataclasses import dataclass
 #comentario
 def BúsquedaProfundidad (escogiendo un sucesor al azar):
 	
+	
 #comentario
 def BúsquedaCostoUniforme:
 	
