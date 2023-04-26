@@ -5,12 +5,18 @@ class nodoP():
   valor = int
   estado = bool
   profundidad = int
+  #vecinos guarda valos de los siguientes niveles de nodos que esta asociado.
   vecinos = []
 
   def __init__(self,nombre,valor):    
+    #nombre de nodo
     self.nombre = nombre
+    #costo de nodo
     self.costo = valor
+    #inicia estados de visitados es Falso
     self.estado = False
+    #inicia con vecino None
+    vecinos.append(None)
     
   
 class Búsquedaenprofundidad:
@@ -27,24 +33,32 @@ class Búsquedaenprofundidad:
 	def generarArbol():
 
 	def buscar(nodoActual,nodoObjetivo):
-		pila.append(nodoActual)
+		AddPila(nodoActual)
 		if nodoActual == nodoObjetivo:
 			return pila
       
 		nodosSucesores=nodo_actual.vecinos
-
+		#si nodos Sucesores no es vacio,elije un nodoSucesor cualquiera :
+		#Aqui falta un caso.
 		if len(nodosSucesores) > 0 :
 			nodoAleatorio = random.choice(nodosSucesores)
-		if nodoALeatorio.estado != False:
+		#si nodoAleatorio su estado no esta visitado:
+		if nodoALeatorio.estado == False: 
+			#llamar a un nuveoNodo y hacer buscar Recursiva
 			nuevoNodo = buscar(nodoAleatorio,nodoObjetivo)
-			pila.append(nuevoNodo)
+			#si nuevo nodo es None,devolvermos None para anterio.
+			AddPila(nuevoNodo)
+		#if 3 devuelve nuevo nodo si no es None
+		#lo contrario devuelve infomacion None.
 		if nuevoNodo is None
-			pila.pop(0)
+			#borramos lo que agregamos si es que es None
+			PopPila()
 			return None
 		else:
 			return nuevoNodo
 
- #tuto#Hayque generar el arbol,los metodos tampoco lo metí,me duele los ojos......aaaaaaaaaaaseñorrr... 
+ #tuto#Hayque generar el arbol,los metodos tampoco lo metí,me duele los ojos......aaaaaaaaaaaseñorrr...
+  
 class Búsqueda por costo uniforme(nodo):
 
 
@@ -59,7 +73,7 @@ clase node:
 	name:str
 	cost:int
 	state:bool
-	nextNod:
+	nextNod=[]
 
 	def __init__(self,name,cost,nextNod)
 		self.name = name
