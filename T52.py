@@ -4,10 +4,9 @@ encontraron la solución óptima, a qué se debió? Y los que no, ¿por qué no 
 Comparamos teoricamente las siguientes busquedas: Búsqueda de profundidad(escogiendo un sucesor al azar),búsqueda por costo unifome,búsqueda greedy y A*
 
 °Comparamos Que hace cada una de estas Búsquedas:
-	-Búsqueda de profundidad(escogiendo un sucesor al azar):Puedemos ver este Busqueda ultiliza un metodo sin husar dato heuristica ,es decir no había sacado el provecho de todos los datos entregados,
-en otra palabras,sin usar el dato de costo de heurística de cada nodo,y su forma unica que se parece a método DFS, solo que en vez de buscar siguiente nodo ordenada,lo hace de manera aleatoria.
-Usando stack para guadar camino generado como registro.
-	
+	-Búsqueda de profundidad(escogiendo un sucesor al azar): su forma de implemntar que se parece a método DFS, solo que en vez de buscar siguiente nodo ordenada,lo hace de manera aleatoria.
+Usando stack para guadar camino generado como registro,como hemos mecionado anteriomente,este metodo se base a su aleatoridad eligiendo el camino.por lo que es importante que los nodo tener estados de visitados o no para evitar lop infinito.
+	-Búsqueda greedy: este Metodo lo hice de misma forma base codigo de Búsqueda de profundidad de forma recursiva. Sabemos este metodo al momento de elegir siguiente camino considerando los costo de cada siguiente nodos para mejorar cada desicion logal,sin embargo 
 
 
 °Comparamos la forma diferente arbol generado por cada Búsqueda
