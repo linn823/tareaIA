@@ -38,5 +38,8 @@ https://www.encora.com/es/blog/dfs-vs-bfs
 °Búsqueda por costo uniforme:
 	
 °Búsqueda greedy:
-
+	#dudosamente facil...no puede ser tan facil
+	1.este método se requiere buscar una mejor ruta cuando cada vez tiene que seleccionar una mejor camino,
+	es decir con menos costo posible.este dicision es localmente mejorado,por global no es segura que sea mejor rutas elegidas.
+	2. en vez de iterativo lo hice de forma recurisiva,supongo que se puede.
 °A*:

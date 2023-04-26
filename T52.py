@@ -14,7 +14,7 @@ Usando stack para guadar camino generado como registro.
 °Comparamos la forma de buscar de cada una 
 °Comparamos cada una en que se caracteristiza.
 °Comparamos sus espacio generado y su tiempo gastado 
-°Comparamos .....que mas....
+°Comparamos .....que mas.....
 
 - De los métodos vistos en clase, ¿hay alguno que NO retorne una solución (es decir, que se
 mantenga realizando búsqueda ad infinitum) en este problema? Si es así, cuál? Y si no, por
