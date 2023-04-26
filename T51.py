@@ -43,7 +43,8 @@ class Búsquedaenprofundidad:
 			return None
 		else:
 			return nuevoNodo
-      
+
+ #tuto#Hayque generar el arbol,los metodos tampoco lo metí,me duele los ojos......aaaaaaaaaaaseñorrr... 
 class Búsqueda por costo uniforme(nodo):
 
 
@@ -53,7 +54,7 @@ class Búsqueda greedy(nodo):
 class AEstrella(nodo):
 #comentario
 
-#nodoXD
+#nodo
 clase node:
 	name:str
 	cost:int
