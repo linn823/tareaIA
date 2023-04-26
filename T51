@@ -8,7 +8,9 @@ Historia de Busqueda:
 	4. y se agrega a la pila para ser explorado posteriormente.
   	5. Es importante llevar un registro de los nodos visitados para evitar ciclos infinitos.
 	6.forma recursiva llamande si solo,
-	7.hay que tener forma de parar recursivacion.
+	7.hay que tener forma de parar recursivacion.llamando sí mismo
+	8.generar el arbol,
+	9.hay que terminar la entrada.
 
 link:
 https://www.w3schools.com/python/ref_random_choice.asp
@@ -30,7 +32,6 @@ https://www.google.com/search?client=opera&q=return+vacio+en+python&sourceid=ope
 https://jarroba.com/returns-en-python/#:~:text=Return%20vacío%3A%20Indica%20que%20la,capturada%20por%20un%20try%2Fexcept.
 https://www.geeksforgeeks.org/python-all-possible-pairs-in-list/
 https://www.geeksforgeeks.org/zip-in-python/
-
 
 
 °Búsqueda por costo uniforme:
