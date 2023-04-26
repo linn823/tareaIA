@@ -1,0 +1,34 @@
+Historia de Busqueda:
+
+°Búsqueda en profundidad (escogiendo un sucesor al azar):
+	
+	1. utilizar una estructura de pila (LIFO - Last In First Out) para almacenar los nodos.
+	2. Cada nodo debe contener información sobre su estado y profundidad actual.
+	3. En cada iteración,se selecciona un sucesor al azar del nodo actual 
+	4. y se agrega a la pila para ser explorado posteriormente.
+  	5. Es importante llevar un registro de los nodos visitados para evitar ciclos infinitos.
+	6.forma recursiva llamande si solo,
+	7.hay que tener forma de parar recursivacion.
+
+link:
+https://www.w3schools.com/python/ref_random_choice.asp
+https://uniwebsidad.com/libros/algoritmos-python/capitulo-17/pilas
+https://morioh.com/p/eb687b491aa8
+https://tutorial.recursospython.com/clases/
+https://www.w3schools.com/python/ref_keyword_raise.asp#:~:text=Definition%20and%20Usage,to%20print%20to%20the%20user.
+https://docs.python.org/es/3/tutorial/classes.html
+https://docs.python.org/es/3/tutorial/datastructures.html
+https://www.noegasystems.com/blog/logistica/fifo-y-lifo-tecnicas-de-almacenaje
+https://es.from-locals.com/python-list-clear-pop-remove-del/
+https://tutorial.recursospython.com/clases/
+https://ellibrodepython.com/booleano-python
+https://www.ediciones-eni.com/open/mediabook.aspx?idR=5200ef40f99f47e98a845478301b7f54
+https://docs.python.org/es/3.9/library/ctypes.html?highlight=puntero
+https://www.freecodecamp.org/espanol/news/python-tutorial-de-lista-vacia-como-crear-y-comprobar-una-lista-vacia-en-python/
+https://recursospython.com/guias-y-manuales/el-tipo-de-dato-none/
+
+°Búsqueda por costo uniforme:
+	
+°Búsqueda greedy:
+
+°A*:
