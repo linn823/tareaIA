@@ -1,12 +1,6 @@
 from dataclasses import dataclass
 
-class nodoP():
-	nombre = str
-	valor = int
-	estado = bool
-	profundidad = int
-	#hijos guarda valos de los siguientes niveles de nodos que esta asociado.
-	hijos = []
+class nodoProfundidad():
 
 	def __init__(self,nombre,valor):    
 		#nombre de nodo
@@ -16,7 +10,7 @@ class nodoP():
 		#inicia estados de visitados es Falso
 		self.estado = False
 		#inicia con vecino None
-		hijos.append(None)
+		self.hijos = []
 
 
 class Búsquedaenprofundidad:
